@@ -1,0 +1,10 @@
+# docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 2dcd05e7c668
+# https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/v4/questions/5417734
+
+# docker build -f Dockerfile.dev .
+# docker run -it containerID npm run test
+
+# why we use nginx
+# https://stackoverflow.com/questions/16770673/using-node-js-only-vs-using-node-js-with-apache-nginx
+
+# docker run -p 8080:80 containerID
