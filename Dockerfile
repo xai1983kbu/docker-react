@@ -13,6 +13,7 @@ RUN npm run build
 FROM nginx
 # https://hub.docker.com/_/nginx
 # look at --> How to use this image
+EXPOSE 80 # for developer and ElastiBeanStalk
 COPY --from=builder /app/build /usr/share/nginx/html
 # So we don't have to actually specifically run anything to startup nginx
 # when we start up the nginx container. It's going to take care of the command for us automatically.
